@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+    <link rel="stylesheet" href="giris.css">
+    <link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+	crossorigin="anonymous"/>
+</head>
+<body>
+    	  <!-- As a link -->
+<nav class="navbar ikons bg-black">
+	<div class="container-fluid">
+	  <a class="navbar-brand text-white" href="#">celikemirr6161@gmail.com</a>
+	  <ul class="nav-list bg-black text-white d-flex ikon">
+		<li class="nav-items"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+		<li class="nav-items"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+		<li class="nav-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+		<li class="nav-items"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+		<li class="nav-items"><a href="#"><i class="fa-brands fa-tumblr"></i></a></li>
+	</ul>
+	</div>
+  </nav>
+	  <!-- NAVBAR -->
+	  <nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+		  <img src="img/logo.jpg" alt="logo" style="width: 110px;">
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link " aria-current="page" href="index.html">Anasayfa</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Hakkımızda</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="giris.html">İletişim</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  Beğenilenler
+				</a>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">Favoriler</a></li>
+				  <li><a class="dropdown-item" href="#">En çok satanlar..</a></li>
+				  <li><a class="dropdown-item" href="#">İndirimdekiler</a></li>
+				</ul>
+			  </li>
+			</ul>
+			<div class="d-flex m-auto" role="search">
+			  <input class="form-control me-2 " type="search" placeholder="Aradığınız ürün.." aria-label="Search">
+			  <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass border-0"></i></button>
+			</div>
+			<li class="nav-item list-unstyled  ">
+				<a href="" class="text-decoration-none text-black ms-3">Sepetim <i class="fa-solid fa-bag-shopping text-danger"></i></a>
+				<a href="" class="text-decoration-none text-black ms-4">Favoriler <i class="fa-solid fa-star text-danger"></i></a>   
+			</li>
+		  </div>
+		</div>
+	  </nav>
+    <div class="container sms text-white">
+        <div class="row mt-5">
+          <div class="col-12 col-md-6">
+            <h5 class="text-center mb-5">Giriş Yap</h5>
+            <hr>
+            <form class="pt-0 pt-md-5" id="giris">
+              <div class="form-group">
+                <label for="exampleInputEmail1">E-Posta Giriniz</label><br><br>
+                <input type="email" class="form-control inpt" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-Posta">
+              </div>
+              <div class="form-group mt-3">
+                <label for="exampleInputPassword1">Şifre Giriniz</label><br><br>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Şifre">
+            </div>
+            <div class="form-group form-check mt-3">
+                <input type="checkbox" class="form-check-input inpt" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Beni Hatırla</label><br><br>
+                <button type="submit" form="giris" id="btn" class="btn btn-dark mt-5">Giriş Yap</button>
+            </div>
+        </form>
+    </div>
+          <div class="col-12 col-md-6">
+            <h5 class="text-center mb-5 mt-md-0 mt-5">Kayıt Ol</h5>
+            <hr>
+            <form id="kayit">
+              <div class="form-group">
+                <label for="exampleInputEmail2">E-Posta Giriniz</label><br><br>
+                <input type="email" class="form-control inpt" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="E-Posta">
+              </div>
+              <div class="form-group mt-3">
+                <label for="exampleInputPassword2">Şifre Giriniz</label><br><br>
+                <input type="password" class="form-control inpt" id="exampleInputPassword2" placeholder="Şifre Giriniz">
+                <label for="exampleInputPassword3" class="mt-2">Şifre Tekrarı</label><br><br>
+                <input type="password" class="form-control inpt" id="exampleInputPassword3" placeholder="Şifrenizi Tekrar Girin">
+                <select class="form-select mt-4 w-50" aria-label="Default select example">
+                    <option selected>Bizi Nerede Gördünüz?</option>
+                    <option value="1">İnstagram Reklamları</option>
+                    <option value="2">Mesaj Reklamları</option>
+                    <option value="3">Afişler</option>
+                  </select>
+              </div>
+              <div class="form-group form-check mt-3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                <label class="form-check-label" for="exampleCheck3"><a href="#">Üyelik Koşulları </a>'nı kabul ediyorum.</label><br><br>
+                <button type="submit" form="kayit" class="btn btn btn-dark">Kayıt Ol</button>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="container-fluid foot text-center text-white mt-5">
+	<nav class="navbar footer-top justify-content-evenly ">
+	  <a class="navbar-brand" href="index.html"><img class="logo" src="new/guess-jeans-1-logo-png-transparent.png" alt="logo"></a>
+	  <a class="nav-link" href="#"><img class="logo3" src="new/Nike-Logo-Transparent-Free-PNG.png" alt="turkiye">
+	  <a class="nav-link" href="#"><img class="logo3" src="new/Logo_brand_Adidas.png" alt="turkiye">
+	  
+	</nav>
+	<hr style="color: black;">
+	<div class="row py-5">
+	  <div class="col-lg-3 col-6">
+		<ul class="navbar-nav">
+		  <li><h3 class="nav-link footer-header">Hakkımızda</h3></li>
+		  <li><a href="#" class="nav-link footer-links">Sözleşme Metni</a></li>
+		  <li><a href="#" class="nav-link footer-links">Vizyonumuz</a></li>
+		  <li><a href="#" class="nav-link footer-links">Misyonumuz</a></li>
+		</ul>
+	  </div>
+	  <div class="col-lg-3 col-6">
+		<ul class="navbar-nav">
+		  <li><h3 class="nav-link footer-header">Veri Saklama</h3></li>
+		  <li><a href="#" class="nav-link footer-links">Gizlilik</a></li>
+		  <li><a href="#" class="nav-link footer-links">Kanunlar</a></li>
+		  <li><a href="#" class="nav-link footer-links">Kullanım Koşulları</a></li>
+		  <li><a href="#" class="nav-link footer-links">Yasal Hükümler</a></li>
+		</ul>
+	  </div>
+	  <div class="col-lg-3 col-6">
+		<ul class="navbar-nav">
+		  <li><h3 class="nav-link footer-header">Ücretlendirmeler</h3></li>
+		  <li><a href="#" class="nav-link footer-links">İndirimli</a></li>
+		  <li><a href="#" class="nav-link footer-links">Çekiliş</a></li>
+		  <li><a href="#" class="nav-link footer-links">Kazananlar</a></li>
+		  <li><a href="#" class="nav-link footer-links">Kazananlar</a></li>
+		</ul>
+	  </div>
+	  <div class="col-lg-3 col-6">
+		<ul class="navbar-nav">
+		  <li><h3 class="nav-link footer-header">Yardım</h3></li>
+		  <li><a href="#" class="nav-link footer-links">Canlı Destek <i class="fa-solid fa-envelope"></i></a></li>
+		</ul>
+		<input class="form-control mt-5" type="search" placeholder="@ E-Posta Bırakınız." aria-label="Search">
+	  </div>
+	</div>
+	<div class="row bottom pb-3">
+	  <div class="col">
+		<strong>Emirhan Çelik</strong>
+	  </div>
+	</div>
+  </footer>
+  
+    <script src="giris.js"></script>
+    <script src="sepet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4429ba4587.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

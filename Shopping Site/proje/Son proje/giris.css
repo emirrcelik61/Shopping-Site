@@ -1,0 +1,56 @@
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 15px;
+}
+.ikons .ikon a{
+	display: flex;
+	margin: 15px;
+	list-style: none;
+	color: white;
+	font-size: 25px !important;
+	text-decoration: none;
+}
+.ikons .ikon li{
+	color: white !important;
+	list-style: none;
+}
+.ali{
+	text-align: center !important;
+}
+input{
+    width: 50%;
+}
+
+footer{
+	background-color: #ECDCDB;
+}
+footer img{
+	width: 180px;
+}
+footer ul li{
+	color: black;
+}
+footer .row h3{
+	font-size: 25px;
+	font-weight: bold;
+	color: black;
+}
